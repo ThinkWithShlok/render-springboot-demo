@@ -9,6 +9,11 @@ import java.util.List;
 @RestController
 public class HelloController {
 
+    @GetMapping("/")
+    public String home() {
+        return "Spring Boot application is running!";
+    }
+
     @GetMapping("/hello")
     public String hello() {
         return "Hello from Spring Boot!";
@@ -23,3 +28,4 @@ public class HelloController {
         );
     }
 }
+
